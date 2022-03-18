@@ -1,0 +1,113 @@
+*,::before,::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern {
+    position: absolute;
+    top:0;
+    width:100%;
+    z-index: -5;
+}
+.pattern img {
+    width:100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color:#FFF;
+    width:450px;
+    text-align:center;
+    border-radius: 20px;
+    box-shadow: hsla(245, 75%, 52%, 0.123) 0px 20px 25px -5px;
+}
+.hero {
+    width:450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h1 {
+    color:hsl(223, 47%, 23%);
+    font-weight:900;
+    padding-top: 50px;
+    font-size: 1.8rem;
+}
+
+p{
+    padding: 20px 50px;
+    font-weight: 500;
+    line-height: 25px;
+    font-size:17px;
+    color:hsl(224, 23%, 55%);
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    margin: 0 45px;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+}
+.sub p{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    font-weight: 900;
+    font-size:16px;
+    color:hsl(223, 47%, 23%);
+}
+.sub span {
+    padding-top: 3px;
+    font-weight:400;
+    color:hsl(224, 23%, 55%);
+}
+.sub a {
+    padding-left:80px;
+    font-size:14px;
+    font-weight:600;
+    color:hsl(245, 75%, 52%);
+}
+.sub a:hover {
+    text-decoration:none;
+    color:hsla(245, 75%, 52%, 0.644);
+    transition:color 0.5s;
+
+}
+.payment {
+    padding: 15px 20px;
+    background-color:hsl(245, 75%, 52%) ;
+    color:#fff;
+    text-decoration: none;
+    font-weight:700;
+    margin: 30px 45px;
+    border-radius:10px;
+    box-shadow: hsla(245, 75%, 52%, 0.315) 0px 20px 25px -5px;
+    transition: background-color 0.4s ;
+
+}
+.payment:hover {
+    background-color:hsla(245, 75%, 52%, 0.644);
+}
+.cancel {
+    margin-bottom: 50px;
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
+    font-weight:700;
+    transition:color 0.5s;
+}
+.cancel:hover{
+    color:hsl(223, 47%, 23%) ;
+}
